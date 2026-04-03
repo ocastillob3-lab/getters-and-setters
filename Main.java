@@ -17,3 +17,11 @@ public class Main {
         prod.setStock(10);
         prod.vender(3);
         System.out.println("Stock restante: " + prod.getStock());
+        
+        // 3) Cuenta Bancaria
+        CuentaBancaria cuenta = new CuentaBancaria();
+        cuenta.setTitular("Oscar");
+        cuenta.setSaldo(1000);
+        cuenta.setPin(1234);
+        cuenta.retirar(200, 1234);
+        cuenta.retirar(100, 1111);

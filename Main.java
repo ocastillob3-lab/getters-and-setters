@@ -25,3 +25,12 @@ public class Main {
         cuenta.setPin(1234);
         cuenta.retirar(200, 1234);
         cuenta.retirar(100, 1111);
+        
+        // 4) Curso
+        Curso curso = new Curso();
+        curso.setNombreCurso("Matemática");
+        curso.setNota1(80);
+        curso.setNota2(70);
+        curso.setNota3(60);
+        System.out.println("Promedio: " + curso.promedio());
+        System.out.println("Estado: " + curso.estado());

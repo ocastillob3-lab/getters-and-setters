@@ -34,3 +34,10 @@ public class Main {
         curso.setNota3(60);
         System.out.println("Promedio: " + curso.promedio());
         System.out.println("Estado: " + curso.estado());
+        
+        // 5) Estudiante
+        Estudiante est = new Estudiante();
+        est.setCarnet("2025-01");
+        est.setNombre("Carlos");
+        est.setPromedio(90);
+        System.out.println("¿Becado?: " + est.esBecado());

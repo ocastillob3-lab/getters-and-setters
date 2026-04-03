@@ -9,3 +9,11 @@ public class Main {
         p.setEdad(-5);
         System.out.println("Persona: " + p.getNombre() + ", Edad: " + p.getEdad());
 
+        // 2) Producto
+        Producto prod = new Producto();
+        prod.setCodigo("P01");
+        prod.setNombre("Laptop");
+        prod.setPrecio(5000);
+        prod.setStock(10);
+        prod.vender(3);
+        System.out.println("Stock restante: " + prod.getStock());

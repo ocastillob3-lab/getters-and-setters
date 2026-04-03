@@ -1,10 +1,11 @@
 package gettersandsetters;
 
 public class Main {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+        // 1) Persona
+        Persona p = new Persona();
+        p.setNombre("Juan");
+        p.setEdad(-5);
+        System.out.println("Persona: " + p.getNombre() + ", Edad: " + p.getEdad());
 
-	}
-
-}

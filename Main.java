@@ -53,3 +53,10 @@ public class Main {
         r.setMinuto(30);
         r.setSegundo(45);
         System.out.println("Hora: " + r.mostrarHora());
+        
+        // 8) Contacto
+        Contacto c = new Contacto();
+        c.setNombre("Oscar");
+        c.setTelefono("12345678");
+        c.setEmail("correo@gmail.com");
+        c.mostrarContacto();

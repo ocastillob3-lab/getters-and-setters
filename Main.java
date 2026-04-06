@@ -46,3 +46,10 @@ public class Main {
         Termometro t = new Termometro();
         t.setCelsius(25);
         System.out.println("Fahrenheit: " + t.getFahrenheit());
+        
+        // 7) Reloj
+        Reloj r = new Reloj();
+        r.setHora(14);
+        r.setMinuto(30);
+        r.setSegundo(45);
+        System.out.println("Hora: " + r.mostrarHora());

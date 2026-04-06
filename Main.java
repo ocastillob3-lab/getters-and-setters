@@ -41,3 +41,8 @@ public class Main {
         est.setNombre("Carlos");
         est.setPromedio(90);
         System.out.println("¿Becado?: " + est.esBecado());
+        
+        // 6) Termómetro
+        Termometro t = new Termometro();
+        t.setCelsius(25);
+        System.out.println("Fahrenheit: " + t.getFahrenheit());

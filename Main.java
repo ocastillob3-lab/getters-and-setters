@@ -60,3 +60,20 @@ public class Main {
         c.setTelefono("12345678");
         c.setEmail("correo@gmail.com");
         c.mostrarContacto();
+        
+        // 9) Jugador
+        Jugador j = new Jugador();
+        j.setNombre("Oscar1");
+        j.actualizarPuntaje(50);
+        j.actualizarPuntaje(100);
+        System.out.println("Puntaje máximo: " + j.getPuntajeMaximo());
+
+        // 10) Factura
+        Factura f = new Factura();
+        f.setCodigoFactura("F001");
+        f.setDescripcion("Compra de libros");
+        f.setCantidad(3);
+        f.setPrecioUnitario(50);
+        f.mostrarFactura();
+    }
+}

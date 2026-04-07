@@ -280,3 +280,35 @@ class Jugador {
      }
  }
 }
+
+//10) Factura
+class Factura {
+ private String codigoFactura, descripcion;
+ private int cantidad;
+ private double precioUnitario;
+
+ public void setCodigoFactura(String c) { codigoFactura = c; }
+ public void setDescripcion(String d) { descripcion = d; }
+
+ public void setCantidad(int cantidad) {
+     if (cantidad > 0) this.cantidad = cantidad;
+     else System.out.println("Cantidad inválida");
+ }
+
+ public void setPrecioUnitario(double precio) {
+     if (precio > 0) this.precioUnitario = precio;
+     else System.out.println("Precio inválido");
+ }
+
+ public double calcularTotal() {
+     return cantidad * precioUnitario;
+ }
+
+ public void mostrarFactura() {
+     System.out.println("Factura: " + codigoFactura);
+     System.out.println("Descripción: " + descripcion);
+     System.out.println("Cantidad: " + cantidad);
+     System.out.println("Precio Unitario: " + precioUnitario);
+     System.out.println("Total: " + calcularTotal());
+ }
+}

@@ -175,3 +175,24 @@ class Curso {
      return promedio() >= 61 ? "Aprobado" : "Reprobado";
  }
 }
+
+//5) Estudiante
+class Estudiante {
+ private String carnet, nombre;
+ private double promedio;
+
+ public void setCarnet(String carnet) { this.carnet = carnet; }
+ public void setNombre(String nombre) { this.nombre = nombre; }
+
+ public void setPromedio(double promedio) {
+     if (promedio >= 0 && promedio <= 100) {
+         this.promedio = promedio;
+     } else {
+         System.out.println("Promedio inválido");
+     }
+ }
+
+ public boolean esBecado() {
+     return promedio >= 85;
+ }
+}

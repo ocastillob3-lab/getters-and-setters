@@ -155,3 +155,23 @@ class CuentaBancaria {
      }
  }
 }
+
+//4) Curso
+class Curso {
+ private String nombreCurso;
+ private double nota1, nota2, nota3;
+
+ public void setNombreCurso(String nombreCurso) { this.nombreCurso = nombreCurso; }
+
+ public void setNota1(double n) { if (n >= 0 && n <= 100) nota1 = n; }
+ public void setNota2(double n) { if (n >= 0 && n <= 100) nota2 = n; }
+ public void setNota3(double n) { if (n >= 0 && n <= 100) nota3 = n; }
+
+ public double promedio() {
+     return (nota1 + nota2 + nota3) / 3;
+ }
+
+ public String estado() {
+     return promedio() >= 61 ? "Aprobado" : "Reprobado";
+ }
+}
